@@ -1,0 +1,97 @@
+.images-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.image-box {
+    position: relative;
+    flex: 1 1 25%;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 15px;
+    max-width: calc(33.33% - 120px);
+
+    .project-image {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+        padding: 10px 20px;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        // background: linear-gradient(
+        //     180deg,
+        //     rgba(0, 0, 0, 0.2) 0,
+        //     rgba(0, 0, 0, 1)
+        // );
+        bottom: -70px;
+    }
+
+    .title {
+        margin-bottom: 0;
+        margin-top: 0;
+        color: #fff;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: -5px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .btn {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding: 0 23px;
+        height: 40px;
+        line-height: 34px;
+        border: 2px solid #ffd700;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #fff;
+        background: transparent;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-3px);
+            background: #ffd700;
+        }
+    }
+
+    &:after {
+        content: '';
+        background: linear-gradient(180deg, #022c43, black);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        opacity: 0;
+    }
+
+    &:hover:after {
+        opacity: 0.75;
+    }
+
+    &:hover .content {
+        bottom: 0;
+    }
+}

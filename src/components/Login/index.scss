@@ -1,0 +1,38 @@
+.login {
+    margin-top: 350px;
+    margin-left: 200px;
+
+    .login-btn {    
+        color: #ffd700;
+        font-size: 18px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 10px 10px;
+        border: 1px solid #ffd700;
+        float: left;
+        border-radius: 4px;
+        background: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-right: 10px;
+        margin-top: 5px;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        cursor: pointer;
+
+        &:hover {
+            background: #ffd700;
+            color: #000;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .login {
+        float: none;
+        display: block;
+        margin: 250px auto 0 auto;
+        width: 265px;
+    }
+}

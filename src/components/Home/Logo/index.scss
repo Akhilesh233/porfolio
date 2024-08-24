@@ -1,0 +1,53 @@
+.logo-container {
+    z-index: 0;
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    bottom: auto;
+    left: auto;
+    margin: auto;
+    opacity: 0;
+
+    svg {
+        position: absolute;
+        width: 133%;
+        height: auto;
+        top: 34px;
+        left: -82.4px;
+        bottom: auto;
+        margin: auto;
+        right: 15%;
+        transform: rotateZ(345deg);
+    }
+
+    .solid-logo {
+        position: absolute;
+        top: -97px;
+        right: 15%;
+        bottom: auto;
+        left: -165px;
+        margin: auto;
+        width: 175%;
+        opacity: 0;
+        transform: rotateZ(345deg);
+        z-index: 1;
+    }
+
+    .svg-container {
+        stroke: #fff;
+        
+        path {
+            stroke-dasharray: 750;
+            stroke-dashoffset: 1000;
+            animation: dash 5s linear forwards;
+        }
+    }
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
