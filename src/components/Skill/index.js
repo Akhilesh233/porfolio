@@ -3,7 +3,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect } from 'react';
 import Loader from 'react-loaders';
 import TagCloud from 'TagCloud';
-import pdf from '../../assets/Resume.pdf';
+import pdf from '../../assets/sample-Resume.pdf';
 
 const Skill = () => {
     const [letterClass, setLetterClass] = useState('text-animate');

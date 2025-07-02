@@ -6,7 +6,7 @@ import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 // import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Constants } from '../../constant';
-import pdf from '../../assets/Resume.pdf';
+import pdf from '../../assets/sample-Resume.pdf';
 import './index.scss';
 
 const Contact = () => {
