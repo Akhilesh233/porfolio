@@ -50,10 +50,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Project Structure
 
-src/components/: Contains all React components, grouped by feature.
-src/assets/: Static assets like images, fonts, and PDFs.
-src/firebase.js: Firebase configuration and initialization.
-public/: Static files and the main HTML template.
+- src/components/: Contains all React components, grouped by feature.
+- src/assets/: Static assets like images, fonts, and PDFs.
+- src/firebase.js: Firebase configuration and initialization.
+- public/: Static files and the main HTML template.
 
 ## Environment Variables
 
